@@ -9,6 +9,7 @@
 #define VALVE_INC_XDOM_THERMOVALVE_H_
 
 #include "SPBTLE_RF.h"
+#include "uln2003.h"
 
 typedef struct{
 	uint8_t source;

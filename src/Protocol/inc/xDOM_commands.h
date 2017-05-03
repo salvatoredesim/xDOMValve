@@ -19,6 +19,7 @@
 #define POWER_ON_VALVE		0x02
 #define POWER_OFF_VALVE		0x03
 
+#define TEST_MOTOR			0x04
 /* Functions */
 
 #endif /* PROTOCOL_INC_XDOM_COMMANDS_H_ */

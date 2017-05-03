@@ -6,6 +6,7 @@
  */
 
 #include "xDOM_ThermoValve.h"
+#include "xDOM_commands.h"
 
 uint8_t VALVE_MAC_ADDRESS[6] = {0x00,0x01,0x02,0x03,0x04,0x05};
 
@@ -33,6 +34,8 @@ SPBTLE_RF_Characteristic motor_caracteristic,command_characteristic;
 
 
 void xDOM_Valve_Init(){
+
+	ULN2003_Init();
 
 	SPBTLE_RF_Init(VALVE_MAC_ADDRESS,"Motor1");
 
@@ -130,6 +133,10 @@ void ParseCommand(evt_gatt_attr_modified_IDB05A1* evt){
 	memcpy(payload,evt->att_data+4,cmd.len);
 
 	cmd.payload_address = payload;
+
+	if(cmd.op == TEST_MOTOR){
+		ULN2003_TestMotor();
+	}
 
 
 }
