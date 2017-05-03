@@ -130,4 +130,6 @@ void ParseCommand(evt_gatt_attr_modified_IDB05A1* evt){
 	memcpy(payload,evt->att_data+4,cmd.len);
 
 	cmd.payload_address = payload;
+
+
 }

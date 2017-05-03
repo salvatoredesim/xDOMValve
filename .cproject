@@ -79,6 +79,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/BLE/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/Valve/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/Protocol/inc&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.456148799" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.731103421" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
